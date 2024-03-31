@@ -21,7 +21,7 @@ const Login = () => {
     if (!userLoading && userLoggedIn) {
       navigation.navigate('Dashboard');
     }
-  }, [loading, userLoggedIn, currentUser]);
+  }, []);
 
   const handleLogin = async () => {
     if (email === '' || password === '') {

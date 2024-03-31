@@ -85,13 +85,6 @@ const DrawerContent = (props) => {
             />
           </>
         }
-        <DrawerItem
-          style={[styles.item, { backgroundColor: itemBgColor }]}
-          label={() => <Text style={[styles.text, textColor]}>Settings</Text>}
-          onPress={() => {
-            navigation.navigate("Settings");
-          }}
-        />
       </DrawerContentScrollView>
     </View>
   );

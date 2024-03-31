@@ -21,13 +21,15 @@ const Dashboard = () => {
     if (!loading && !userLoggedIn) {
       navigation.navigate('Login');
     }
-  }, [loading, userLoggedIn, currentUser]);
+  }, []);
 
   return (
     <View style={[styles.container, bgColor]}>
-      <View style={styles.userDetail}>
-        <Text style={[styles.text, textColor]}>Email: {currentUser.email}</Text>
-      </View>
+      {userLoggedIn &&
+        <View style={styles.userDetail}>
+          <Text style={[styles.text, textColor]}>Email: {currentUser.email}</Text>
+        </View>
+      }
     </View>
   )
 }

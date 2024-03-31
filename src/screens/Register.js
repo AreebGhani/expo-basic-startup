@@ -22,7 +22,7 @@ const Register = () => {
     if (!userLoading && userLoggedIn) {
       navigation.navigate('Dashboard');
     }
-  }, [loading, userLoggedIn, currentUser]);
+  }, []);
 
   const handleRegister = async () => {
     if (username === '' || email === '' || password === '') {

@@ -16,7 +16,7 @@ const ProductDetail = ({ route }) => {
             <View style={styles.imageSliderContainer}>
                 <SliderBox
                     images={product.images}
-                    sliderBoxHeight={300}
+                    sliderBoxHeight={350}
                     dotColor="#FFEE58"
                     inactiveDotColor="#90A4AE"
                     paginationBoxVerticalPadding={20}
